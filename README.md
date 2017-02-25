@@ -143,7 +143,7 @@ try {
 这里。先调用`shutdown()`使线程池状态改变为`SHUTDOWN`，线程池不允许继续添加线程，并且等待正在执行的线程返回。
 调用`awaitTermination`设置定时任务，代码内的意思为2s后检测线程池内的线程是否均执行完毕（就像老师告诉学生，“最后给你2s钟时间把作业写完”），若没有执行完毕，则调用`shutdownNow()`方法。
 
-## 3. 关于更多
+## 4. 关于更多
 关于`shutdown()`, `shutdownNow()`和`awaitTermination()`方法，我在网上发现一个非常优雅的举例。是一位日本人写的[文章](http://gurimmer.lolipop.jp/daihakken/2012/01/27/javaexecutorserviceの正しい終了shutdownの仕方/)
 
 我搬运一下译文。
